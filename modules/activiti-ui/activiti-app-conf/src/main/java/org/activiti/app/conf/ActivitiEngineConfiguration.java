@@ -94,6 +94,10 @@ public class ActivitiEngineConfiguration {
     	processEngineConfiguration.setAsyncExecutorActivate(true);
     	processEngineConfiguration.setAsyncExecutor(asyncExecutor());
 
+        processEngineConfiguration.setActivityFontName(environment.getProperty("activity.font.name", "宋体"));
+        processEngineConfiguration.setAnnotationFontName(environment.getProperty("annotation.font.name", "宋体"));
+        processEngineConfiguration.setLabelFontName(environment.getProperty("label.font.name", "宋体"));
+
     	String emailHost = environment.getProperty("email.host");
     	if (StringUtils.isNotEmpty(emailHost)) {
         	processEngineConfiguration.setMailServerHost(emailHost);
