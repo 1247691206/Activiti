@@ -207,6 +207,11 @@
       <artifactId>httpmime</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+
     <!-- TEST dependencies -->
     <dependency>
       <groupId>junit</groupId>
