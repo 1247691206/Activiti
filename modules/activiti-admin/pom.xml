@@ -318,41 +318,41 @@
         <version>2.2</version>
       </plugin>
 
-<!--      <plugin>-->
-<!--        <groupId>org.codehaus.mojo</groupId>-->
-<!--        <artifactId>exec-maven-plugin</artifactId>-->
-<!--        <version>3.1.0</version>-->
-<!--        <executions>-->
-<!--          <execution>-->
-<!--            <id>npm install</id>-->
-<!--            <goals>-->
-<!--              <goal>exec</goal>-->
-<!--            </goals>-->
-<!--            <phase>generate-resources</phase>-->
-<!--            <configuration>-->
-<!--              <executable>npm</executable>-->
-<!--              <workingDirectory>${project.basedir}</workingDirectory>-->
-<!--              <arguments>-->
-<!--                <argument>install</argument>-->
-<!--              </arguments>-->
-<!--            </configuration>-->
-<!--          </execution>-->
-<!--          <execution>-->
-<!--            <id>bower install</id>-->
-<!--            <goals>-->
-<!--              <goal>exec</goal>-->
-<!--            </goals>-->
-<!--            <phase>generate-resources</phase>-->
-<!--            <configuration>-->
-<!--              <executable>bower</executable>-->
-<!--              <workingDirectory>${project.basedir}</workingDirectory>-->
-<!--              <arguments>-->
-<!--                <argument>install</argument>-->
-<!--              </arguments>-->
-<!--            </configuration>-->
-<!--          </execution>-->
-<!--        </executions>-->
-<!--      </plugin>-->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <id>npm install</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <executable>npm</executable>
+              <workingDirectory>${project.basedir}</workingDirectory>
+              <arguments>
+                <argument>install</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>bower install</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <executable>bower</executable>
+              <workingDirectory>${project.basedir}</workingDirectory>
+              <arguments>
+                <argument>install</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
     <pluginManagement>
       <plugins>
