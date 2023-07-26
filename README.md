@@ -173,3 +173,50 @@ FAQ
         * with [Open Hub](https://www.openhub.net/p/activiti/contributors) which also has statistics
 
         * in [the GitHub web interface](https://github.com/activiti).
+
+
+# activiti6源码开发环境配置
+
+## 代码分支
+
+https://github.com/1247691206/Activiti/tree/6.x
+
+## 前置环境依赖
+
+1. npm 安装
+
+```
+brew install npm
+```
+
+2. bower 安装
+
+```
+npm install -g bower
+```
+
+3. maven 安装并选择distro/deploy
+
+4. root 下执行 pakcage
+
+```
+mvn -DskipTests=true package -P distro,deploy
+```
+
+5. 后续即可去target中取出打包的代码war包
+
+activiti-admin
+activiti-app
+activiti-rest-webapp
+
+## 改进点
+
+1. 数据库mysql支持
+2. 中文课可配置支持
+3. 后续可迭代改进等
+
+
+## 参考文献
+1.源码部署：https://www.kancloud.cn/chachacha/activiti6/470507
+
+2.中文&mysql支持：https://emacle.github.io/posts/activiti-shi-yong-mysql-bu-shu-ji-zhong-wen-bu-xian-shi-jie-jue/
