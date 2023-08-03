@@ -181,6 +181,9 @@ FAQ
 
 https://github.com/1247691206/Activiti/tree/6.x
 
+https://github.com/Activiti/Activiti/tree/activiti-6.0.0
+https://github.com/Activiti/Activiti/releases/tag/activiti-6.0.0
+
 ## 前置环境依赖
 
 1. npm 安装
