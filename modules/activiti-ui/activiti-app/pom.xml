@@ -18,6 +18,17 @@
     <dependency>
       <groupId>org.activiti</groupId>
       <artifactId>activiti-app-conf</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-data-commons</artifactId>
+          <groupId>org.springframework.data</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-commons</artifactId>
+      <version>1.13.23.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
